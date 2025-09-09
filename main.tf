@@ -21,7 +21,7 @@ resource "random_id" "rand_id" {
 }
 
 resource "aws_s3_bucket" "demo_bucket" {
-    bucket = "tf-cloud-${random_id.rand_id.hex}"
+    bucket = "tf-clouds-${random_id.rand_id.hex}"
 
     tags = {
         Name        = "Test Bucket"
